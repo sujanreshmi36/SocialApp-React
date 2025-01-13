@@ -1,8 +1,8 @@
 import React from "react";
-import Topbar from "../Topbar/Topbar";
-import Sidebar from "../sidebar/Sidebar";
-import Feed from "../Feed/Feed";
-import Rightbar from "../rightbar/Rightbar";
+import Topbar from "../../components/Topbar/Topbar";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/Feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
 import "./home.css";
 const Home = () => {
   return (
