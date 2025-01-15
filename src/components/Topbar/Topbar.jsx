@@ -35,7 +35,7 @@ const Topbar = () => {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
+        <img src="/assets/person/7.jpeg" alt="" className="topbarImg" />
       </div>
     </div>
   );
