@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Feed.css";
 import Share from "../share/Share";
 import { Posts } from "../../../dummy";
 import Post from "../post/post";
 import { Users } from "../../../dummy";
 const Feed = () => {
+  //   const[posts,setPosts]=useState([]);
+  //   useEffect(()=>{
+  // const fetchPost=async ()=>{
+  //  const res=await axios.get("post/timeline-posts");
+  // }
+  //   },[])
   return (
     <div className="feed">
       <div className="feedWrapper">

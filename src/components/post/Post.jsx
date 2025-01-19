@@ -3,18 +3,20 @@ import "./post.css";
 import { MoreVert } from "@mui/icons-material";
 const Post = ({ post, users }) => {
   const [like, setLike] = useState(post.like);
+  const PF = import.meta.env.VITE_PUBLIC_FOLDER;
   const [isLiked, setIsliked] = useState(false);
   const handlelike = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsliked(!isLiked);
   };
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src={users?.profilePicture}
+              src={PF + users?.profilePicture}
               alt=""
               className="postProfileImg"
             />
@@ -27,18 +29,18 @@ const Post = ({ post, users }) => {
         </div>
         <div className="postCenter">
           <span className="postText">{post?.desc}</span>
-          <img src={post.photo} alt="" className="postImg" />
+          <img src={PF + post.photo} alt="" className="postImg" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <img
-              src="/assets/like.png"
+              src={`${PF}like.png`}
               alt=""
               className="likeIcon"
               onClick={handlelike}
             />
             <img
-              src="/assets/heart.png"
+              src={`${PF}heart.png`}
               alt=""
               className="likeIcon"
               onClick={handlelike}

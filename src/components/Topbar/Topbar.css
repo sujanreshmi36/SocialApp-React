@@ -16,6 +16,7 @@
     margin: 20px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .topbarCenter{
     flex: 5;

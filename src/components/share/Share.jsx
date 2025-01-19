@@ -2,11 +2,12 @@ import React from "react";
 import "./share.css";
 import { PermMedia, Label, LocationOn, Mood } from "@mui/icons-material";
 const Share = () => {
+  const PF = import.meta.env.VITE_PUBLIC_FOLDER;
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img src="/assets/person/7.jpeg" alt="" className="shareProfileImg" />
+          <img src={`${PF}/person/7.jpeg`} alt="" className="shareProfileImg" />
           <input
             type="text"
             className="shareInput"
