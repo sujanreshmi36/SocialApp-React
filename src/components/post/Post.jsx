@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./post.css";
 import { MoreVert } from "@mui/icons-material";
+import axios from "axios";
 const Post = ({ post, users }) => {
+  const url = import.meta.env.VITE_BACKEND_URL;
+  const token = localStorage.getItem("token");
   const [like, setLike] = useState(post.like);
   const PF = import.meta.env.VITE_PUBLIC_FOLDER;
   const [isLiked, setIsliked] = useState(false);
+  const [user, setUser] = useState({});
   const handlelike = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsliked(!isLiked);
   };
+  // axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const response = await axios.get(url + "users/get-info");
+  //     console.log("rendered");
+  //     console.log(response);
+  //   };
+  // }, []);
 
   return (
     <div className="post">

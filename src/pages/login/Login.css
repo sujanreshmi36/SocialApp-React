@@ -44,6 +44,7 @@
 
 .loginInput{
     height: 50px;
+    width: 95%;
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid gray;
@@ -67,6 +68,7 @@
 .loginForgot{
     text-align: center;
     color: #1775ee;
+    cursor: pointer;
 }
 
 .loginRegisterButton{
@@ -80,4 +82,18 @@
     color: white;
     font-weight: 500;
     cursor: pointer;
+}
+.passwordWrapper{
+    position: relative;
+}
+.togglePassword{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
 }
